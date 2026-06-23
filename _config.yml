@@ -12,7 +12,7 @@
 
 theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
 locale                   : "ja-JP"
@@ -331,3 +331,17 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: ""
+      type: tooling
+    values:
+      layout: single
+      header:
+        overlay_image: assets/images/anton-savinov-2Qlj2Gaft7w-unsplash.jpg
+        overlay_filter: 0.6
+      sidebar:
+        nav: tooling
+
+collections:
+  tooling:
+    output: true

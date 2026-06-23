@@ -9,5 +9,3 @@ tooling:
     children:
       - title: textintを翻訳の校正に使う
         url: /tooling/textlint/
-      - title: 翻訳者が扱うデータフォーマット
-        url: /tooling/data-formats/

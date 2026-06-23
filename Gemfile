@@ -8,6 +8,7 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll", "~> 4.4.1"
+gem "rb-kqueue", ">= 0.2"
 
 gem "minimal-mistakes-jekyll", "~> 4.28"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -25,10 +26,6 @@ end
 platforms :windows, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
-end
-require "rbconfig"
-if RbConfig::CONFIG['target_os'] =~ /(?i-mx:bsd|dragonfly)/
-  gem "rb-kqueue", ">= 0.2"
 end
 
 # Performance-booster for watching directories on Windows

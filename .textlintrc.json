@@ -1,0 +1,28 @@
+{
+  "plugins": {
+  },
+  "filters": {
+    "allowlist": {
+      "allow": [
+        "/{: [^}]+}/"
+      ]
+    }
+  },
+  "rules": {
+    "ja-hiraku": true,
+    "ja-no-mixed-period": true,
+    "ja-no-orthographic-variants": true,
+    "ja-unnatural-alphabet": true,
+    "no-double-negative-ja": true,
+    "no-doubled-joshi": true,
+    "no-mixed-zenkaku-and-hankaku-alphabet": true,
+    "@textlint-ja/no-synonyms": true,
+    "ja-hiragana-hojodoushi": true,
+    "ja-hiragana-keishikimeishi": true,
+    "prh": {
+      "rulePaths": [
+        "./prh.yml"
+      ]
+    }
+  }
+}
